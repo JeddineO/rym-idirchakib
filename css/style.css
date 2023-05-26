@@ -1064,7 +1064,6 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1s ease infinite;
 }
 
 @keyframes pulse {
@@ -2109,9 +2108,4 @@ form label {
 
 .js .animate-box {
   opacity: 0;
-}
-
-.simply-countdown-one div {
-  background-color: #800020;
-  border-radius: 100%;
 }
