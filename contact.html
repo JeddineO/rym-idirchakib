@@ -74,11 +74,9 @@
 			</div>
 		</nav>
 
-		<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-top: 120px;">
-			<span>We can’t wait to celebrate with you all!
-
-				Please be sure to RSVP by October 1st, 2023</span>
-			<h2>Wedding Gallery</h2>
+		<div class="col-md-12 text-center fh5co-heading animate-box" style="margin-top: 120px;">
+			<span>We can’t wait to celebrate with you all!</span>
+			<h2>Please RSVP by October 1st, 2023!</h2>
 		</div>
 
 		<div id="page">
@@ -117,9 +115,13 @@
 
 								<div class="row form-group">
 									<div class="col-md-12">
-										<input type="checkbox" id="subject">
-										<label for="subject">Will you be attending the wedding? (Options: Yes / No)
-										</label>
+										<label for="subject">Will you be attending the wedding?</label>
+										<select name="" id="" class="form-control">
+											<option value="">Select your choice</option>
+											<option value="">Yes</option>
+											<option value="">No</option>
+										</select>
+
 
 									</div>
 								</div>
@@ -143,11 +145,11 @@
 									var container = document.getElementById("inputContainer");
 
 									function addInputField() {
-										if (a < 3) {
+										if (a < 5) {
 											a++;
 											container.innerHTML += "<div class='col - md - 12'><label for='subject' > Guest" + a + "</label ><input type='text' id='subject' class='form-control'placeholder='Name of Guest " + a + "'></div>";
 										}
-										if (a == 3) {
+										if (a == 5) {
 											document.getElementById("addInputBtn").className = "btn btn-secondary";
 
 										}
@@ -160,9 +162,11 @@
 
 								<div class="row form-group">
 									<div class="col-md-12">
-										<label for="subject">Gift's information</label>
-										<textarea name="message" id="message" cols="30" rows="3" class="form-control"
-											placeholder="Write us about you gift"></textarea>
+										<label for="subject">Gift's information <a
+												href="https://withjoy.com/rym-and-idirchakib/registry"> (contribute)</a>
+										</label>
+										<textarea name="message" id="message" cols="30" rows="6" class="form-control"
+											placeholder="As this is a destination wedding we'd like to kindly request that our guests refrain from bringing large gifts. If you'd like to contribute to our wedding fund, please click on the link above"></textarea>
 									</div>
 								</div>
 
