@@ -130,13 +130,14 @@ figure {
   margin: 0;
   list-style: none;
   display: inline;
+  color: #fff;
 }
 
 .fh5co-nav ul li a {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -201,14 +202,14 @@ figure {
 .fh5co-nav ul li.has-dropdown .dropdown li a {
   padding: 2px 0;
   display: block;
-  color: #000;
+  color: #fff;
   line-height: 1.2;
   text-transform: none;
   font-size: 15px;
 }
 
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
-  color: #000;
+  color: #fff;
 }
 
 .fh5co-nav ul li.has-dropdown:hover a,
@@ -2117,5 +2118,19 @@ p {
 
 footer p {
   text-align: center;
+
+}
+
+#fh5co-offcanvas ul li a {
+  color: #fff;
+}
+
+.js-fh5co-nav-toggle {
+  position: fixed;
+  top: 0;
+}
+
+.active {
+  font-weight: 600;
 
 }
