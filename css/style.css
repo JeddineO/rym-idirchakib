@@ -1064,7 +1064,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation:none;
+  animation: none;
 }
 
 @keyframes pulse {
@@ -2109,4 +2109,13 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+
 }
