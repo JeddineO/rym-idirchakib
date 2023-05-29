@@ -2134,3 +2134,36 @@ footer p {
   font-weight: 600;
 
 }
+
+.img1 {
+  margin-right: 50%;
+  margin-left: 35%;
+  width: 300px;
+  margin-top: -80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .img1 {
+
+    margin-left: 0%;
+    width: 300px;
+    margin-top: -80px;
+    z-index: 1;
+  }
+
+  .test {
+    display: none;
+    height: 1px;
+    width: 100%;
+  }
+
+  .test+div {
+    margin-top: 30px;
+  }
+
+  .count {
+    width: 90%;
+    font-size: small;
+    margin-left: 10px;
+  }
+}

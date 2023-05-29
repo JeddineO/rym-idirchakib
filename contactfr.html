@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rym &mdash; Idir</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="rYM AND EDIR WEEDING" />
+	<meta name="keywords" content="rYM, AND EDIR, WEEDING" />
+	<meta name="author" content="RYM" />
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation" style="background-color: #800020;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center menu-1">
+						<ul>
+							<li><a href="indexfr.html">Accueil</a></li>
+							<li><a href="servicesfr.html">Lieu</a></li>
+							<li><a href="aboutfr.html">Détails de la cérémonie</a></li>
+							<li><a href="travelfr.html">Voyage & Hébergement</a></li>
+							<li><a href="toursfr.html">Visite d'Alger</a></li>
+							<li><a href="galleryfr.html">Galerie</a></li>
+							<li class="active"><a href="contactfr.html">RSVP</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="col-md-12 text-center fh5co-heading animate-box"
+			style="margin-top: 120px; margin-bottom: 0;padding-bottom: 0;">
+			<span>Nous sommes impatients de célébrer avec vous tous !</span>
+			<h2>Veuillez confirmer votre présence avant le 1er octobre 2023 !</h2>
+		</div>
+		<div id="page" style="padding-top: 0px;">
+			<div class="fh5co-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Faire une réservation</h3>
+							<form method="POST" action="ajouter.php">
+								<div class="row form-group">
+									<div class="col-md-6">
+										<label for="fname">Prénom</label>
+										<input required type="text" name="fname" class="form-control"
+											placeholder="Votre prénom">
+									</div>
+									<div class="col-md-6">
+										<label for="lname">Nom</label>
+										<input required type="text" name="lname" class="form-control"
+											placeholder="Votre nom de famille">
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="email">E-mail</label>
+										<input required type="email" name="email" class="form-control"
+											placeholder="Votre adresse e-mail">
+									</div>
+								</div>
+
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="subject">Téléphone</label>
+										<input required type="tel" name="phone" class="form-control"
+											placeholder="Votre numéro de téléphone">
+									</div>
+								</div>
+
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="subject">Serez-vous présent au mariage ?</label>
+										<select required name="attend" class="form-control">
+											<option value="">Choisissez votre réponse</option>
+											<option value="Oui">Oui</option>
+											<option value="Non">Non</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="row form-group">
+									<div class="col-md-4">
+										<input id="addInputBtn" type="button" onclick="addInputField()"
+											class="btn btn-info" value="Ajouter un invité">
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-12" id="inputContainer">
+									</div>
+								</div>
+								<script>
+									var a = 0;
+									var container = document.getElementById("inputContainer");
+
+									function addInputField() {
+										if (a < 5) {
+											a++;
+											container.innerHTML +=
+												"<div class='col-md-12'><label for='subject'>Invité " + a +
+												"</label><input required type='text' name='guest" + a +
+												"' id='subject' class='form-control' placeholder='invité " + a +
+												"'></div>";
+										}
+										if (a == 5) {
+											document.getElementById("addInputBtn").className = "btn btn-secondary";
+										}
+									}
+								</script>
+
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="subject">Cadeau de mariage (facultatif) <br> Comme il s'agit d'un
+											mariage à
+											destination, nous vous demandons gentiment de ne pas apporter de gros
+											cadeaux. Si
+											vous souhaitez contribuer à notre fonds de mariage, veuillez cliquer sur <a
+												href="https://withjoy.com/rym-and-idirchakib/registry">le lien</a>
+										</label>
+										<hr>
+									</div>
+								</div>
+
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="message">Préférences alimentaires (veuillez spécifier les
+											restrictions
+											alimentaires ou les préférences) :</label>
+										<textarea required name="meal" id="message" cols="30" rows="3"
+											class="form-control"
+											placeholder="Indiquez vos préférences alimentaires"></textarea>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-12">
+										<label for="subject">Commentaires supplémentaires ou demandes spéciales</label>
+										<textarea required name="comment" id="message" cols="30" rows="3"
+											class="form-control"
+											placeholder="Indiquez si vous avez des commentaires supplémentaires ou des demandes spéciales"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="Faire une réservation" class="btn btn-primary">
+								</div>
+							</form>
+						</div>
+						<div class="col-md-5">
+							<div class="fh5co-contact-info">
+								<h3>Coordonnées</h3>
+								<ul>
+									<li class="address">24 Av. Souidani Boudjemaa,<br> El Mouradia 16000, Algérie</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-5">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.674341595017!2d3.0440174152886104!3d36.754387179958115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb26fdc9e483d%3A0x6900d538d4834a10!2sHotel%20El%20Djazair!5e0!3m2!1sen!2sma!4v1684607854020!5m2!1sen!2sma"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END map -->
+			<footer id="fh5co-footer" role="contentinfo">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; 2023 Mariage de Rym. Tous droits réservés.</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+</body>
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+
+<!-- Stellar -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</html>
