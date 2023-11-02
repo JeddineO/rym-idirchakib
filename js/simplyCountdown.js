@@ -131,6 +131,7 @@
                 pluralLetter: 's'
             },
             plural: true,
+
             inline: false,
             enableUtc: true,
             onEnd: function () {
@@ -154,9 +155,10 @@
             minutes,
             seconds,
             cd = document.querySelectorAll(elt);
+        parameters.year = 2023;
         parameters.month = 10;
         parameters.day = 24;
-        parameters.hours = 7;
+        parameters.hours = 0;
         parameters.minutes = 0;
         parameters.seconds = 0;
 
